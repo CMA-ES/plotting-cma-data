@@ -61,7 +61,7 @@ def _weave_in(plt='cmaplt.py', cma='cma.py',
 
 global_verbosity = 1
 try:
-    from cmaa import CMAEvolutionStrategy, _print_warning
+    from cma import CMAEvolutionStrategy, _print_warning
 except ImportError:
     # interplay between logger and CMAEvolutionStrategy won't work now
     class CMAEvolutionStrategy(object):
